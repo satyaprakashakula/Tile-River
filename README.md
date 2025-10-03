@@ -1,9 +1,7 @@
 # Tile-River
 Implementing data propagation network across fully connected neural network layers
 
-
 This is a Neural Network (NN) structure using a tile structure (in this every tile acts as a node for a NN, see the attached image). This design uses a a 10x10 tile structure. Here data flows from some input nodes all the way  to the output nodes (in other words, building a network communication implementation). Half Precision Floating point numbers are used(all Normalized numbers).
-
 
 1- We used the tile architecture(see attached image in the repo) and mapped a NN to the tile architecture. The NN has 10 input nodes, 8 and 6 nodes on the 2nd and the 3rd hidden layers respectively  and 2 output nodes on the output layer. 
 2- For the input layer, assume some fixed random values  inputs to this layer  between 1 and -1  
@@ -24,6 +22,7 @@ Some explanation regarding the tiles:
 3- Tiles on the corner can access only 2 neighbors (as shown in the attached image)
 4- Tiles on the boundary, other than the corner ones, can access 3 neighbors (as shown in the attached image)
 5- All other tiles can access 4 neighbors (as shown in the attached image)
+
 
 
 
